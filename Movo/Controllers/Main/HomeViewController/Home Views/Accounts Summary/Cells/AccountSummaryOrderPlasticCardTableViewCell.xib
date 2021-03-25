@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountSummaryOrderPlasticCardTableViewCell" rowHeight="85" id="KGk-i7-Jjw" customClass="AccountSummaryOrderPlasticCardTableViewCell" customModule="Movo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXM-v0-m90" customClass="BlackBGButton" customModule="Movo" customModuleProvider="target">
+                        <rect key="frame" x="60" y="48" width="200" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="Dmf-tW-IjK"/>
+                            <constraint firstAttribute="height" constant="35" id="xXR-Ha-RQX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <state key="normal" title="Order Physical Card"/>
+                        <connections>
+                            <action selector="orderPlasticCardButtonWasPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="amL-ot-KYk"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="KXM-v0-m90" secondAttribute="bottom" constant="2" id="IZZ-xo-eVg"/>
+                    <constraint firstItem="KXM-v0-m90" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="L5Q-4e-cRx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="button" destination="KXM-v0-m90" id="lP5-rk-wNC"/>
+            </connections>
+            <point key="canvasLocation" x="-55.072463768115945" y="49.888392857142854"/>
+        </tableViewCell>
+    </objects>
+</document>

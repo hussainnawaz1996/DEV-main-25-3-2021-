@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Please enter the OTP sent to verification@mail.comor +971-1234567890.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

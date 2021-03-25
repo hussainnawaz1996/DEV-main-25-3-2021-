@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aller_Bd.ttf">
+            <string>Aller-Bold</string>
+        </array>
+        <array key="Aller_Rg.ttf">
+            <string>Aller</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduledPaymentsTableViewCell" id="KGk-i7-Jjw" customClass="ScheduledPaymentsTableViewCell" customModule="Movo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="e7m-71-NgI">
+                        <rect key="frame" x="20" y="17.5" width="280" height="45.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transfer_scheduled_icon" translatesAutoresizingMaskIntoConstraints="NO" id="gkR-0I-mCF">
+                                <rect key="frame" x="0.0" y="8.5" width="25" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="6Pz-Sr-IH6"/>
+                                    <constraint firstAttribute="height" constant="28" id="jNh-Bi-4hX"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="BAh-Yt-pnw">
+                                <rect key="frame" x="37" y="0.0" width="150" height="45.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="mG5-l4-q9k">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="16.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Withdraw Funds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTb-gj-H1m">
+                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="14"/>
+                                                <color key="textColor" name="black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="(Card to Bank) " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8V-HJ-mPa">
+                                                <rect key="frame" x="82.5" y="0.0" width="67.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Aller" family="Aller" pointSize="10"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From: RAZA ASFI *5286" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVY-QZ-YT8">
+                                        <rect key="frame" x="0.0" y="18.5" width="150" height="13"/>
+                                        <fontDescription key="fontDescription" name="Aller" family="Aller" pointSize="11"/>
+                                        <color key="textColor" name="black"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To: RAZA ASFI *0161" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRs-nT-2gs">
+                                        <rect key="frame" x="0.0" y="33.5" width="150" height="12"/>
+                                        <fontDescription key="fontDescription" name="Aller" family="Aller" pointSize="10"/>
+                                        <color key="textColor" name="label_gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="TS2-6T-8cd">
+                                <rect key="frame" x="199" y="14.5" width="81" height="16.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Vu0-vD-GL3">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="16.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OA7-Bi-hHl">
+                                                <rect key="frame" x="0.0" y="0.0" width="5.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="13"/>
+                                                <color key="textColor" name="red"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$-2.00 USD" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gh-Ms-g2r">
+                                                <rect key="frame" x="7.5" y="0.0" width="73.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="14"/>
+                                                <color key="textColor" name="black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="e7m-71-NgI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="2kw-IZ-pTe"/>
+                    <constraint firstItem="e7m-71-NgI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jeP-Ym-fkB"/>
+                    <constraint firstAttribute="trailing" secondItem="e7m-71-NgI" secondAttribute="trailing" constant="20" id="oQW-Le-hUk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountStatusLabel" destination="OA7-Bi-hHl" id="YPF-HY-lAH"/>
+                <outlet property="fromLbl" destination="kVY-QZ-YT8" id="SBg-OX-8lv"/>
+                <outlet property="priceLbl" destination="8gh-Ms-g2r" id="Bi8-2H-Oq8"/>
+                <outlet property="toLbl" destination="JRs-nT-2gs" id="8Zt-qd-hQ1"/>
+                <outlet property="typeIcon" destination="gkR-0I-mCF" id="eXI-04-wGg"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="117"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="transfer_scheduled_icon" width="25" height="28"/>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="label_gray">
+            <color red="0.60399997234344482" green="0.6119999885559082" blue="0.62000000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="red">
+            <color red="0.88599997758865356" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

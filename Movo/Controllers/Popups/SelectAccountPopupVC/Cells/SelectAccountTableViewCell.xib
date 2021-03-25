@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aller_Bd.ttf">
+            <string>Aller-Bold</string>
+        </array>
+        <array key="Aller_Rg.ttf">
+            <string>Aller</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelectAccountTableViewCell" rowHeight="50" id="KGk-i7-Jjw" customClass="SelectAccountTableViewCell" customModule="Movo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GXp-d6-cA8">
+                        <rect key="frame" x="20" y="12" width="280" height="26"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RwC-uv-rM6">
+                                <rect key="frame" x="0.0" y="0.5" width="246" height="25.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVO Card *5286" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wb6-Y6-kyq">
+                                        <rect key="frame" x="0.0" y="0.0" width="246" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance: $9.75 USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8k-AV-7mr">
+                                        <rect key="frame" x="0.0" y="14.5" width="246" height="11"/>
+                                        <fontDescription key="fontDescription" name="Aller" family="Aller" pointSize="9"/>
+                                        <color key="textColor" red="0.60392156860000001" green="0.61176470589999998" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selected_popup_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Fax-0L-isf">
+                                <rect key="frame" x="254" y="0.0" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="Rrb-gS-mA2"/>
+                                    <constraint firstAttribute="height" constant="26" id="yot-yv-XRE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="txX-Pi-ioQ"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GXp-d6-cA8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ACp-5e-D7D"/>
+                    <constraint firstAttribute="trailing" secondItem="GXp-d6-cA8" secondAttribute="trailing" constant="20" id="e13-Sm-HOc"/>
+                    <constraint firstItem="GXp-d6-cA8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="idd-Mv-3IS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="accountNumberLbl" destination="Wb6-Y6-kyq" id="z4D-Dq-NPk"/>
+                <outlet property="balanceLbl" destination="M8k-AV-7mr" id="lOf-ed-V3f"/>
+                <outlet property="selectionIcon" destination="Fax-0L-isf" id="1bg-zp-mBd"/>
+            </connections>
+            <point key="canvasLocation" x="75" y="50"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="selected_popup_icon" width="26" height="26"/>
+    </resources>
+</document>

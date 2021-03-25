@@ -1,0 +1,117 @@
+PODS:
+  - ActiveLabel (1.1.0)
+  - AcuantiOSSDKV11 (11.4.8):
+    - AcuantiOSSDKV11/AcuantCamera (= 11.4.8)
+    - AcuantiOSSDKV11/AcuantCommon (= 11.4.8)
+    - AcuantiOSSDKV11/AcuantDocumentProcessing (= 11.4.8)
+    - AcuantiOSSDKV11/AcuantEchipReader (= 11.4.8)
+    - AcuantiOSSDKV11/AcuantFaceCapture (= 11.4.8)
+    - AcuantiOSSDKV11/AcuantFaceMatch (= 11.4.8)
+    - AcuantiOSSDKV11/AcuantHGLiveness (= 11.4.8)
+    - AcuantiOSSDKV11/AcuantImagePreparation (= 11.4.8)
+    - AcuantiOSSDKV11/AcuantIPLiveness (= 11.4.8)
+    - AcuantiOSSDKV11/AcuantPassiveLiveness (= 11.4.8)
+  - AcuantiOSSDKV11/AcuantCamera (11.4.8):
+    - AcuantiOSSDKV11/AcuantCamera/Common (= 11.4.8)
+    - AcuantiOSSDKV11/AcuantCamera/Document (= 11.4.8)
+    - AcuantiOSSDKV11/AcuantCamera/Mrz (= 11.4.8)
+    - AcuantiOSSDKV11/AcuantCommon
+    - AcuantiOSSDKV11/AcuantImagePreparation
+  - AcuantiOSSDKV11/AcuantCamera/Common (11.4.8):
+    - AcuantiOSSDKV11/AcuantCommon
+    - AcuantiOSSDKV11/AcuantImagePreparation
+  - AcuantiOSSDKV11/AcuantCamera/Document (11.4.8):
+    - AcuantiOSSDKV11/AcuantCamera/Common
+    - AcuantiOSSDKV11/AcuantCommon
+    - AcuantiOSSDKV11/AcuantImagePreparation
+  - AcuantiOSSDKV11/AcuantCamera/Mrz (11.4.8):
+    - AcuantiOSSDKV11/AcuantCamera/Common
+    - AcuantiOSSDKV11/AcuantCommon
+    - AcuantiOSSDKV11/AcuantImagePreparation
+  - AcuantiOSSDKV11/AcuantCommon (11.4.8)
+  - AcuantiOSSDKV11/AcuantDocumentProcessing (11.4.8):
+    - AcuantiOSSDKV11/AcuantCommon
+  - AcuantiOSSDKV11/AcuantEchipReader (11.4.8):
+    - AcuantiOSSDKV11/AcuantCommon
+  - AcuantiOSSDKV11/AcuantFaceCapture (11.4.8):
+    - AcuantiOSSDKV11/AcuantCommon
+    - AcuantiOSSDKV11/AcuantImagePreparation
+  - AcuantiOSSDKV11/AcuantFaceMatch (11.4.8):
+    - AcuantiOSSDKV11/AcuantCommon
+  - AcuantiOSSDKV11/AcuantHGLiveness (11.4.8):
+    - AcuantiOSSDKV11/AcuantCommon
+  - AcuantiOSSDKV11/AcuantImagePreparation (11.4.8):
+    - AcuantiOSSDKV11/AcuantCommon
+  - AcuantiOSSDKV11/AcuantIPLiveness (11.4.8):
+    - AcuantiOSSDKV11/AcuantCommon
+    - iProov (~> 7.5.0)
+  - AcuantiOSSDKV11/AcuantPassiveLiveness (11.4.8):
+    - AcuantiOSSDKV11/AcuantCommon
+  - iProov (7.5.0):
+    - KeychainAccess (~> 4.1)
+    - Socket.IO-Client-Swift (~> 15.2)
+    - SwiftyJSON (~> 5.0)
+  - IQKeyboardManagerSwift (6.5.6)
+  - KeychainAccess (4.2.2)
+  - LGSideMenuController (2.1.1)
+  - MBProgressHUD (1.2.0)
+  - RNCryptor (5.1.0)
+  - SDWebImage (5.9.2):
+    - SDWebImage/Core (= 5.9.2)
+  - SDWebImage/Core (5.9.2)
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
+  - SwiftyJSON (5.0.0)
+  - TOCropViewController (2.5.5)
+  - "UITextView+Placeholder (1.4.0)"
+
+DEPENDENCIES:
+  - ActiveLabel
+  - AcuantiOSSDKV11
+  - AcuantiOSSDKV11/AcuantCamera
+  - AcuantiOSSDKV11/AcuantImagePreparation
+  - IQKeyboardManagerSwift
+  - LGSideMenuController
+  - MBProgressHUD
+  - RNCryptor
+  - SDWebImage
+  - TOCropViewController
+  - "UITextView+Placeholder"
+
+SPEC REPOS:
+  trunk:
+    - ActiveLabel
+    - AcuantiOSSDKV11
+    - iProov
+    - IQKeyboardManagerSwift
+    - KeychainAccess
+    - LGSideMenuController
+    - MBProgressHUD
+    - RNCryptor
+    - SDWebImage
+    - Socket.IO-Client-Swift
+    - Starscream
+    - SwiftyJSON
+    - TOCropViewController
+    - "UITextView+Placeholder"
+
+SPEC CHECKSUMS:
+  ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
+  AcuantiOSSDKV11: 721f4ed63c62797fd4a1e115c1dad9c60ed0818f
+  iProov: 16de51166c50a08ec0d2a32334687c7d0e5236e3
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  RNCryptor: a369134686cd2ad391323cc856b62e591193ba79
+  SDWebImage: 0b42b8719ab0c5257177d5894306e8a336b21cbb
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  TOCropViewController: da59f531f8ac8a94ef6d6c0fc34009350f9e8bfe
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
+
+PODFILE CHECKSUM: f2e6bf6adc8106fbd42d4bdd964a198e4af51c78
+
+COCOAPODS: 1.9.3

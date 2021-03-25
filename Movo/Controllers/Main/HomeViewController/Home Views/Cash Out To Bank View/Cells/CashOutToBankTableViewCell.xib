@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aller_Bd.ttf">
+            <string>Aller-Bold</string>
+        </array>
+        <array key="Aller_Rg.ttf">
+            <string>Aller</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CashOutToBankTableViewCell" rowHeight="200" id="KGk-i7-Jjw" customClass="CashOutToBankTableViewCell" customModule="Movo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="532" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="532" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="KmE-wR-9Ed">
+                        <rect key="frame" x="20" y="20" width="492" height="298"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ABT-JD-qYq">
+                                <rect key="frame" x="0.0" y="0.0" width="492" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K3D-gK-cBs">
+                                        <rect key="frame" x="0.0" y="2.5" width="492" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MW-CQ-0PV">
+                                                <rect key="frame" x="0.0" y="0.0" width="242" height="30"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="15"/>
+                                                <color key="textColor" name="black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGa-tg-yoz">
+                                                <rect key="frame" x="250" y="0.0" width="242" height="30"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hpI-Ip-COT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="242" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select From Card" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36W-ah-5n0">
+                                                                <rect key="frame" x="0.0" y="8" width="225" height="14"/>
+                                                                <fontDescription key="fontDescription" name="Aller" family="Aller" pointSize="12"/>
+                                                                <color key="textColor" name="label_gray"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right_icon" translatesAutoresizingMaskIntoConstraints="NO" id="uSb-fH-TAO">
+                                                                <rect key="frame" x="233" y="9" width="9" height="12"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="9" id="ALV-QE-sKg"/>
+                                                                    <constraint firstAttribute="height" constant="12" id="si0-5y-NQY"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddA-bd-XJi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="242" height="30"/>
+                                                        <connections>
+                                                            <action selector="selectFromCardButtonWasPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UdW-Ns-Xdg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="ddA-bd-XJi" secondAttribute="bottom" id="BVt-SA-Odd"/>
+                                                    <constraint firstItem="hpI-Ip-COT" firstAttribute="leading" secondItem="ZGa-tg-yoz" secondAttribute="leading" id="CvD-x2-0D0"/>
+                                                    <constraint firstItem="ddA-bd-XJi" firstAttribute="leading" secondItem="ZGa-tg-yoz" secondAttribute="leading" id="QmH-SN-jFP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="hpI-Ip-COT" secondAttribute="bottom" id="YQR-YJ-VNe"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ddA-bd-XJi" secondAttribute="trailing" id="Z2n-nH-4Ov"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hpI-Ip-COT" secondAttribute="trailing" id="bA5-gS-Jn2"/>
+                                                    <constraint firstItem="ddA-bd-XJi" firstAttribute="top" secondItem="ZGa-tg-yoz" secondAttribute="top" id="cHd-4p-vgJ"/>
+                                                    <constraint firstAttribute="height" constant="30" id="ssI-eh-c8B"/>
+                                                    <constraint firstItem="hpI-Ip-COT" firstAttribute="top" secondItem="ZGa-tg-yoz" secondAttribute="top" id="tj1-Jm-dLP"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ew-s1-4Ro">
+                                        <rect key="frame" x="0.0" y="31" width="492" height="0.5"/>
+                                        <color key="backgroundColor" name="light_gray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="mDt-E3-LMt"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="K3D-gK-cBs" firstAttribute="leading" secondItem="ABT-JD-qYq" secondAttribute="leading" id="Ard-xK-F69"/>
+                                    <constraint firstAttribute="trailing" secondItem="K3D-gK-cBs" secondAttribute="trailing" id="D2e-CO-QvB"/>
+                                    <constraint firstItem="4ew-s1-4Ro" firstAttribute="leading" secondItem="ABT-JD-qYq" secondAttribute="leading" id="Dtb-P4-HnG"/>
+                                    <constraint firstAttribute="bottom" secondItem="4ew-s1-4Ro" secondAttribute="bottom" id="YOf-HG-FCL"/>
+                                    <constraint firstAttribute="trailing" secondItem="4ew-s1-4Ro" secondAttribute="trailing" id="ccs-4b-S6v"/>
+                                    <constraint firstAttribute="height" constant="30" id="dNZ-xr-d7W"/>
+                                    <constraint firstItem="K3D-gK-cBs" firstAttribute="centerY" secondItem="ABT-JD-qYq" secondAttribute="centerY" id="nlz-jD-jHM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rGz-iA-9Wh">
+                                <rect key="frame" x="0.0" y="62" width="492" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yr8-5w-Lhc">
+                                        <rect key="frame" x="0.0" y="2.5" width="492" height="26"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPj-2R-1Ft">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="26"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="15"/>
+                                                <color key="textColor" name="black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vph-2l-yOB">
+                                                <rect key="frame" x="342" y="0.0" width="150" height="26"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMt-OS-fYv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="133" height="26"/>
+                                                        <fontDescription key="fontDescription" name="Aller" family="Aller" pointSize="12"/>
+                                                        <state key="normal" title="Select Bank Account">
+                                                            <color key="titleColor" name="label_gray"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="selectBankAccountButtonWasPresed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bnJ-hO-xvg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right_icon" translatesAutoresizingMaskIntoConstraints="NO" id="QkG-0w-CAh">
+                                                        <rect key="frame" x="141" y="7" width="9" height="12"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="9" id="M6w-rn-HlO"/>
+                                                            <constraint firstAttribute="height" constant="12" id="Xvf-iT-zaY"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="pSI-7R-23Z"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KR7-Ge-bNx">
+                                        <rect key="frame" x="0.0" y="31" width="492" height="0.5"/>
+                                        <color key="backgroundColor" name="light_gray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="krh-85-o69"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KR7-Ge-bNx" secondAttribute="trailing" id="0tZ-Py-vim"/>
+                                    <constraint firstItem="yr8-5w-Lhc" firstAttribute="leading" secondItem="rGz-iA-9Wh" secondAttribute="leading" id="244-FU-IPw"/>
+                                    <constraint firstAttribute="bottom" secondItem="KR7-Ge-bNx" secondAttribute="bottom" id="9Xr-Ps-3vz"/>
+                                    <constraint firstItem="yr8-5w-Lhc" firstAttribute="centerY" secondItem="rGz-iA-9Wh" secondAttribute="centerY" id="NqV-tb-cfM"/>
+                                    <constraint firstItem="KR7-Ge-bNx" firstAttribute="leading" secondItem="rGz-iA-9Wh" secondAttribute="leading" id="PTi-ps-UXU"/>
+                                    <constraint firstAttribute="trailing" secondItem="yr8-5w-Lhc" secondAttribute="trailing" id="eJd-t2-Ksi"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJA-Hz-Ptm">
+                                <rect key="frame" x="0.0" y="124" width="492" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7E9-vz-XPj">
+                                        <rect key="frame" x="0.0" y="7" width="492" height="17.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9Z-eS-3t4">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="15"/>
+                                                <color key="textColor" name="black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Transfer Amount" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XKZ-jg-cMx" customClass="Decimal2DigitsTextField" customModule="Movo" customModuleProvider="target">
+                                                <rect key="frame" x="362" y="0.0" width="130" height="17.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="130" id="szL-B6-sFd"/>
+                                                </constraints>
+                                                <color key="textColor" name="black"/>
+                                                <fontDescription key="fontDescription" name="Aller" family="Aller" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <action selector="amountFieldDidChange:" destination="KGk-i7-Jjw" eventType="editingChanged" id="pVW-LB-rOw"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UQ1-jG-NaS">
+                                        <rect key="frame" x="0.0" y="31.5" width="492" height="0.5"/>
+                                        <color key="backgroundColor" name="light_gray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="sp5-ek-9bk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="UQ1-jG-NaS" secondAttribute="bottom" id="LuR-5D-3WY"/>
+                                    <constraint firstAttribute="trailing" secondItem="7E9-vz-XPj" secondAttribute="trailing" id="jZA-k4-yEJ"/>
+                                    <constraint firstItem="7E9-vz-XPj" firstAttribute="centerY" secondItem="dJA-Hz-Ptm" secondAttribute="centerY" id="pJ8-ba-eWM"/>
+                                    <constraint firstAttribute="trailing" secondItem="UQ1-jG-NaS" secondAttribute="trailing" id="pKG-k0-lge"/>
+                                    <constraint firstItem="7E9-vz-XPj" firstAttribute="leading" secondItem="dJA-Hz-Ptm" secondAttribute="leading" id="pyH-XI-RUy"/>
+                                    <constraint firstItem="UQ1-jG-NaS" firstAttribute="leading" secondItem="dJA-Hz-Ptm" secondAttribute="leading" id="qfY-F8-RDR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4mn-fT-TFo">
+                                <rect key="frame" x="0.0" y="186" width="492" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oK6-vw-LrE">
+                                        <rect key="frame" x="0.0" y="2" width="492" height="26"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6P-en-ITm">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="26"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="15"/>
+                                                <color key="textColor" name="black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7de-Ej-w94">
+                                                <rect key="frame" x="342" y="0.0" width="150" height="26"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcE-CC-b6e">
+                                                        <rect key="frame" x="0.0" y="0.0" width="133" height="26"/>
+                                                        <fontDescription key="fontDescription" name="Aller" family="Aller" pointSize="12"/>
+                                                        <state key="normal" title="Select Frequency">
+                                                            <color key="titleColor" name="label_gray"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="selectFrequencyButtonWasPresed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Aoy-tV-6BU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right_icon" translatesAutoresizingMaskIntoConstraints="NO" id="2hZ-EL-C0E">
+                                                        <rect key="frame" x="141" y="7" width="9" height="12"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="12" id="ZpT-z0-ahv"/>
+                                                            <constraint firstAttribute="width" constant="9" id="mjd-Y4-rOT"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="zgC-NL-2DE"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KoE-Pu-Ej5">
+                                        <rect key="frame" x="0.0" y="31" width="492" height="0.5"/>
+                                        <color key="backgroundColor" name="light_gray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="5ZD-K7-Y9O"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="KoE-Pu-Ej5" firstAttribute="leading" secondItem="4mn-fT-TFo" secondAttribute="leading" id="CF6-jJ-26t"/>
+                                    <constraint firstAttribute="trailing" secondItem="KoE-Pu-Ej5" secondAttribute="trailing" id="HW1-JN-D4g"/>
+                                    <constraint firstAttribute="trailing" secondItem="oK6-vw-LrE" secondAttribute="trailing" id="PH8-J9-qKL"/>
+                                    <constraint firstItem="oK6-vw-LrE" firstAttribute="centerY" secondItem="4mn-fT-TFo" secondAttribute="centerY" id="VSn-1y-VV8"/>
+                                    <constraint firstItem="oK6-vw-LrE" firstAttribute="leading" secondItem="4mn-fT-TFo" secondAttribute="leading" id="mrI-S5-Fm7"/>
+                                    <constraint firstAttribute="bottom" secondItem="KoE-Pu-Ej5" secondAttribute="bottom" id="tTM-GJ-p1M"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cEX-29-PCc">
+                                <rect key="frame" x="0.0" y="248" width="492" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="x2W-mL-rYn">
+                                        <rect key="frame" x="0.0" y="2" width="492" height="26"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddI-8n-I7f">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="26"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="15"/>
+                                                <color key="textColor" name="black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yTf-7k-h5u">
+                                                <rect key="frame" x="342" y="0.0" width="150" height="26"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlW-Gi-ddH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="127" height="26"/>
+                                                        <fontDescription key="fontDescription" name="Aller" family="Aller" pointSize="12"/>
+                                                        <state key="normal" title="Schedule Date">
+                                                            <color key="titleColor" name="label_gray"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="scheduleDateButtonWasPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="LaB-B9-U7P"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar_icon" translatesAutoresizingMaskIntoConstraints="NO" id="HH7-aZ-id2">
+                                                        <rect key="frame" x="135" y="5.5" width="15" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="15" id="ja3-iw-7Bp"/>
+                                                            <constraint firstAttribute="height" constant="15" id="mxQ-5g-bIA"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="pqE-zw-OUZ"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KRC-Md-JAr">
+                                        <rect key="frame" x="0.0" y="31" width="492" height="0.5"/>
+                                        <color key="backgroundColor" name="light_gray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="3bd-pv-mL8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KRC-Md-JAr" secondAttribute="trailing" id="HMJ-IY-a2a"/>
+                                    <constraint firstItem="x2W-mL-rYn" firstAttribute="centerY" secondItem="cEX-29-PCc" secondAttribute="centerY" id="Mif-V8-mFw"/>
+                                    <constraint firstItem="KRC-Md-JAr" firstAttribute="leading" secondItem="cEX-29-PCc" secondAttribute="leading" id="Tuc-uA-hva"/>
+                                    <constraint firstAttribute="bottom" secondItem="KRC-Md-JAr" secondAttribute="bottom" id="dTj-cj-WsU"/>
+                                    <constraint firstItem="x2W-mL-rYn" firstAttribute="leading" secondItem="cEX-29-PCc" secondAttribute="leading" id="j0F-2X-6Db"/>
+                                    <constraint firstAttribute="trailing" secondItem="x2W-mL-rYn" secondAttribute="trailing" id="qq1-Rm-03a"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KmE-wR-9Ed" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="QTy-X6-2mE"/>
+                    <constraint firstItem="KmE-wR-9Ed" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="X6A-st-uF3"/>
+                    <constraint firstAttribute="trailing" secondItem="KmE-wR-9Ed" secondAttribute="trailing" constant="20" id="bBQ-IN-jGf"/>
+                    <constraint firstAttribute="bottom" secondItem="KmE-wR-9Ed" secondAttribute="bottom" id="jNQ-ne-SXL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountField" destination="XKZ-jg-cMx" id="s6Z-uR-d3u"/>
+                <outlet property="bankButton" destination="JMt-OS-fYv" id="nQw-Jc-bph"/>
+                <outlet property="cardLabel" destination="36W-ah-5n0" id="nWv-kF-C6F"/>
+                <outlet property="frequencyButton" destination="TcE-CC-b6e" id="add-Or-5kD"/>
+                <outlet property="scheduleDateButton" destination="VlW-Gi-ddH" id="pBv-kl-B9o"/>
+                <outlet property="scheduledView" destination="cEX-29-PCc" id="Pva-aP-efj"/>
+            </connections>
+            <point key="canvasLocation" x="240.57971014492756" y="159.04017857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_right_icon" width="9" height="15"/>
+        <image name="calendar_icon" width="32" height="28"/>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="label_gray">
+            <color red="0.60399997234344482" green="0.6119999885559082" blue="0.62000000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="light_gray">
+            <color red="0.90200001001358032" green="0.90200001001358032" blue="0.90200001001358032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

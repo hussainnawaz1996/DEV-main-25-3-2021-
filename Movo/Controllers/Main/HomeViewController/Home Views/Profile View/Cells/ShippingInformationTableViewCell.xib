@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aller_Bd.ttf">
+            <string>Aller-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShippingInformationTableViewCell" rowHeight="250" id="KGk-i7-Jjw" customClass="ShippingInformationTableViewCell" customModule="Movo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="103-lE-ayL">
+                        <rect key="frame" x="30" y="0.0" width="260" height="200"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E6x-Jv-vy5">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zT7-zh-iB5">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="39.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address1*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1p-CB-swQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="39.5"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" placeholder="----------" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DwX-4l-pPN">
+                                                <rect key="frame" x="60" y="0.0" width="200" height="39.5"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="10"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textFieldDidChange:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="0AL-M2-5CS"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8g0-f6-cPo">
+                                        <rect key="frame" x="0.0" y="39.5" width="260" height="0.5"/>
+                                        <color key="backgroundColor" name="light_gray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.59999999999999998" id="cf0-JY-JXv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2j2-nB-DGr">
+                                <rect key="frame" x="0.0" y="40" width="260" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NoH-Vt-PZR">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="39.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Mv-D6-JAo">
+                                                <rect key="frame" x="0.0" y="0.0" width="27.5" height="39.5"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" placeholder="----------" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N28-Zq-OUy">
+                                                <rect key="frame" x="27.5" y="0.0" width="232.5" height="39.5"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="10"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textFieldDidChange:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="aRi-R1-suN"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVB-v5-dU3">
+                                        <rect key="frame" x="0.0" y="39.5" width="260" height="0.5"/>
+                                        <color key="backgroundColor" name="light_gray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.59999999999999998" id="Ssc-Du-OkN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CcM-Ds-LUF">
+                                <rect key="frame" x="0.0" y="80" width="260" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmp-0H-8Ar">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="39.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State/Province*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbu-gN-WxA">
+                                                <rect key="frame" x="0.0" y="0.0" width="90.5" height="39.5"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWA-bz-DXw">
+                                                <rect key="frame" x="90.5" y="0.0" width="169.5" height="39.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viU-2I-Ohb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="39.5"/>
+                                                        <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="10"/>
+                                                        <state key="normal" title="-">
+                                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="stateButtonWasPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EKD-yd-oxv"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="viU-2I-Ohb" secondAttribute="trailing" id="DHa-W4-FMf"/>
+                                                    <constraint firstAttribute="bottom" secondItem="viU-2I-Ohb" secondAttribute="bottom" id="SgQ-2A-fY6"/>
+                                                    <constraint firstItem="viU-2I-Ohb" firstAttribute="leading" secondItem="TWA-bz-DXw" secondAttribute="leading" id="cez-bI-Ect"/>
+                                                    <constraint firstItem="viU-2I-Ohb" firstAttribute="top" secondItem="TWA-bz-DXw" secondAttribute="top" id="tNz-gA-RDF"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCp-3B-eTf">
+                                        <rect key="frame" x="0.0" y="39.5" width="260" height="0.5"/>
+                                        <color key="backgroundColor" name="light_gray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.59999999999999998" id="Ofx-hP-QiD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0vX-ve-Blg">
+                                <rect key="frame" x="0.0" y="120" width="260" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6WK-Wu-PKZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="39.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLm-O0-baI">
+                                                <rect key="frame" x="0.0" y="0.0" width="23.5" height="39.5"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" placeholder="----------" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K0m-6P-2db">
+                                                <rect key="frame" x="23.5" y="0.0" width="236.5" height="39.5"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="10"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="textFieldDidChange:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="JNv-T2-EvT"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0MQ-ch-JNn">
+                                        <rect key="frame" x="0.0" y="39.5" width="260" height="0.5"/>
+                                        <color key="backgroundColor" name="light_gray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.59999999999999998" id="X5E-9R-nQM"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6VT-At-Z5k">
+                                <rect key="frame" x="0.0" y="160" width="260" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhK-Tv-kE2">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="39.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdY-bt-vkx">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="39.5"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" text="United States Of America" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tlT-4b-Aha">
+                                                <rect key="frame" x="51" y="0.0" width="209" height="39.5"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="10"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GdI-7Z-pTX">
+                                        <rect key="frame" x="0.0" y="39.5" width="260" height="0.5"/>
+                                        <color key="backgroundColor" name="light_gray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.59999999999999998" id="uFy-OC-o4A"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="obS-Ee-gbf"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="103-lE-ayL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="tOh-cj-pSo"/>
+                    <constraint firstAttribute="trailing" secondItem="103-lE-ayL" secondAttribute="trailing" constant="30" id="yvf-jo-dvM"/>
+                    <constraint firstItem="103-lE-ayL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zho-of-GkJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="address1Field" destination="DwX-4l-pPN" id="hfr-kN-MFj"/>
+                <outlet property="cityField" destination="N28-Zq-OUy" id="1h3-ZY-cOP"/>
+                <outlet property="stateButton" destination="viU-2I-Ohb" id="Wuv-MU-W6m"/>
+                <outlet property="zipField" destination="K0m-6P-2db" id="wBv-5b-vLH"/>
+            </connections>
+            <point key="canvasLocation" x="-9" y="63"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="light_gray">
+            <color red="0.90200001001358032" green="0.90200001001358032" blue="0.90200001001358032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

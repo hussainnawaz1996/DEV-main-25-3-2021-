@@ -1,0 +1,6 @@
+framework module AcuantiOSSDKV11 {
+  umbrella header "AcuantiOSSDKV11-umbrella.h"
+
+  export *
+  module * { export * }
+}

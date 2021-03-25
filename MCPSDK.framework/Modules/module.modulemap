@@ -1,0 +1,6 @@
+framework module MCPSDK {
+  umbrella header "MCPSDK.h"
+
+  export *
+  module * { export * }
+}

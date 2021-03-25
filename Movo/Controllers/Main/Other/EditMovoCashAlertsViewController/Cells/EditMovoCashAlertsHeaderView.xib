@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aller_Bd.ttf">
+            <string>Aller-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditMovoCashAlertsHeaderView" customModule="Movo" customModuleProvider="target">
+            <connections>
+                <outlet property="cardNumberLabel" destination="soS-TY-770" id="f6r-PW-g0P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VXM-kv-rET">
+                    <rect key="frame" x="30" y="16.5" width="354" height="17"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSa-xS-wUh">
+                            <rect key="frame" x="0.0" y="0.0" width="177" height="17"/>
+                            <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVO Card *5286" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soS-TY-770">
+                            <rect key="frame" x="177" y="0.0" width="177" height="17"/>
+                            <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oun-B9-bFL">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="headerButtonWasPressed:" destination="-1" eventType="touchUpInside" id="xWc-Wa-t15"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.83529411764705885" green="0.8666666666666667" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oun-B9-bFL" secondAttribute="trailing" id="Dne-TL-aQq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="oun-B9-bFL" secondAttribute="bottom" id="LoN-dM-fqC"/>
+                <constraint firstAttribute="trailing" secondItem="VXM-kv-rET" secondAttribute="trailing" constant="30" id="NeL-K6-LE7"/>
+                <constraint firstItem="oun-B9-bFL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cWh-X4-NZv"/>
+                <constraint firstItem="VXM-kv-rET" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="eCj-6C-bub"/>
+                <constraint firstItem="oun-B9-bFL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eF4-rZ-y4j"/>
+                <constraint firstItem="VXM-kv-rET" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="hoX-cn-Yk0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="51" y="56"/>
+        </view>
+    </objects>
+</document>

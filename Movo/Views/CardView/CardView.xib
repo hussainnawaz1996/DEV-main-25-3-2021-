@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aller_Bd.ttf">
+            <string>Aller-Bold</string>
+        </array>
+        <array key="Aller_Lt.ttf">
+            <string>Aller-Light</string>
+        </array>
+        <array key="Aller_Rg.ttf">
+            <string>Aller</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardView" customModule="Movo" customModuleProvider="target">
+            <connections>
+                <outlet property="accountNumberLbl" destination="2aV-cF-zzo" id="E5S-qs-HwR"/>
+                <outlet property="cvvLbl" destination="XgZ-tw-qrP" id="xJT-UD-chL"/>
+                <outlet property="expiryLbl" destination="tm7-Hy-4Hh" id="j2Y-Og-Blq"/>
+                <outlet property="usernameLbl" destination="aNd-eL-jbE" id="YaD-Nw-R6y"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="305"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9A5-zm-FHO" customClass="RoundedBorderedShadowedView" customModule="Movo" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="188" height="305"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_icon" translatesAutoresizingMaskIntoConstraints="NO" id="a4E-PV-Ln9">
+                            <rect key="frame" x="0.0" y="0.0" width="188" height="305"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234   5678   9000   6325" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aV-cF-zzo">
+                            <rect key="frame" x="16" y="175" width="156" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Z8N-rV-VJa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Aller" family="Aller" pointSize="12"/>
+                            <color key="textColor" name="black"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="MWq-hr-JyP">
+                            <rect key="frame" x="40" y="225" width="140" height="20"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07/22" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tm7-Hy-4Hh">
+                                    <rect key="frame" x="0.0" y="0.0" width="68" height="20"/>
+                                    <fontDescription key="fontDescription" name="Aller-Light" family="Aller Light" pointSize="12"/>
+                                    <color key="textColor" name="black"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CVV 123" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgZ-tw-qrP">
+                                    <rect key="frame" x="72" y="0.0" width="68" height="20"/>
+                                    <fontDescription key="fontDescription" name="Aller-Light" family="Aller Light" pointSize="12"/>
+                                    <color key="textColor" name="black"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="YdW-cQ-IKu"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOM ENGLISH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNd-eL-jbE">
+                            <rect key="frame" x="16" y="16" width="156" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="YM3-pI-bMd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Aller-Bold" family="Aller" pointSize="12"/>
+                            <color key="textColor" name="black"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="MWq-hr-JyP" secondAttribute="trailing" constant="8" id="2Hc-QH-WnR"/>
+                        <constraint firstItem="MWq-hr-JyP" firstAttribute="leading" secondItem="9A5-zm-FHO" secondAttribute="leading" constant="40" id="8fI-Dm-nYQ"/>
+                        <constraint firstAttribute="trailing" secondItem="2aV-cF-zzo" secondAttribute="trailing" constant="16" id="BAw-jg-V9a"/>
+                        <constraint firstItem="aNd-eL-jbE" firstAttribute="leading" secondItem="9A5-zm-FHO" secondAttribute="leading" constant="16" id="IvZ-50-zvJ"/>
+                        <constraint firstItem="a4E-PV-Ln9" firstAttribute="top" secondItem="9A5-zm-FHO" secondAttribute="top" id="NYu-OO-41y"/>
+                        <constraint firstItem="aNd-eL-jbE" firstAttribute="top" secondItem="9A5-zm-FHO" secondAttribute="top" constant="16" id="RFr-l0-E58"/>
+                        <constraint firstAttribute="bottom" secondItem="a4E-PV-Ln9" secondAttribute="bottom" id="T7v-MN-hVh"/>
+                        <constraint firstItem="MWq-hr-JyP" firstAttribute="top" secondItem="2aV-cF-zzo" secondAttribute="bottom" constant="30" id="XEK-eC-Se3"/>
+                        <constraint firstAttribute="trailing" secondItem="a4E-PV-Ln9" secondAttribute="trailing" id="Z3h-q8-fZx"/>
+                        <constraint firstItem="a4E-PV-Ln9" firstAttribute="centerX" secondItem="9A5-zm-FHO" secondAttribute="centerX" id="ehM-oZ-QsI"/>
+                        <constraint firstAttribute="trailing" secondItem="aNd-eL-jbE" secondAttribute="trailing" constant="16" id="kmh-HH-vo1"/>
+                        <constraint firstAttribute="bottom" secondItem="MWq-hr-JyP" secondAttribute="bottom" constant="60" id="tsd-sb-4pF"/>
+                        <constraint firstItem="a4E-PV-Ln9" firstAttribute="leading" secondItem="9A5-zm-FHO" secondAttribute="leading" id="uQc-cs-sRq"/>
+                        <constraint firstItem="2aV-cF-zzo" firstAttribute="leading" secondItem="9A5-zm-FHO" secondAttribute="leading" constant="16" id="vM8-6K-FI3"/>
+                        <constraint firstItem="a4E-PV-Ln9" firstAttribute="centerX" secondItem="9A5-zm-FHO" secondAttribute="centerX" id="whc-Cn-Uml"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9A5-zm-FHO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2Gu-Eh-a3T"/>
+                <constraint firstAttribute="trailing" secondItem="9A5-zm-FHO" secondAttribute="trailing" id="TEG-As-dx9"/>
+                <constraint firstItem="9A5-zm-FHO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iSt-Es-2cx"/>
+                <constraint firstAttribute="bottom" secondItem="9A5-zm-FHO" secondAttribute="bottom" id="kwg-z0-Nmj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="108.69565217391305" y="112.16517857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="card_icon" width="188" height="294"/>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

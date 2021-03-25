@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileHeaderView" customModule="Movo" customModuleProvider="target">
+            <connections>
+                <outlet property="arrowIcon" destination="EDx-DG-wm2" id="OV1-yd-FmQ"/>
+                <outlet property="button" destination="hDl-Lt-fQV" id="0EB-gq-EeF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U38-Wh-eF9">
+                    <rect key="frame" x="30" y="40" width="354" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDl-Lt-fQV" customClass="BlackBGButton" customModule="Movo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="354" height="40"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="btnWasPressed:" destination="-1" eventType="touchUpInside" id="HiB-IB-Mub"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_down_icon" translatesAutoresizingMaskIntoConstraints="NO" id="EDx-DG-wm2">
+                            <rect key="frame" x="327" y="16.5" width="11" height="7"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="7" id="4WD-i6-BxI"/>
+                                <constraint firstAttribute="width" constant="11" id="oTp-u1-uh8"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="hDl-Lt-fQV" firstAttribute="top" secondItem="U38-Wh-eF9" secondAttribute="top" id="362-br-wvY"/>
+                        <constraint firstAttribute="bottom" secondItem="hDl-Lt-fQV" secondAttribute="bottom" id="FuT-ms-TDD"/>
+                        <constraint firstAttribute="trailing" secondItem="hDl-Lt-fQV" secondAttribute="trailing" id="Wcc-YN-ON2"/>
+                        <constraint firstAttribute="trailing" secondItem="EDx-DG-wm2" secondAttribute="trailing" constant="16" id="oKi-y6-KeY"/>
+                        <constraint firstItem="hDl-Lt-fQV" firstAttribute="leading" secondItem="U38-Wh-eF9" secondAttribute="leading" id="tM9-pw-hPA"/>
+                        <constraint firstItem="EDx-DG-wm2" firstAttribute="centerY" secondItem="U38-Wh-eF9" secondAttribute="centerY" id="vNR-nE-5mZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="U38-Wh-eF9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="0KD-cl-jb6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="U38-Wh-eF9" secondAttribute="trailing" constant="30" id="2Cd-Em-UmU"/>
+                <constraint firstAttribute="bottom" secondItem="U38-Wh-eF9" secondAttribute="bottom" constant="20" id="ghL-AB-OGx"/>
+                <constraint firstItem="U38-Wh-eF9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="sY1-pU-yXh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="37.681159420289859" y="57.589285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_down_icon" width="11" height="7"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

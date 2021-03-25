@@ -1,0 +1,24 @@
+${PODS_ROOT}/Target Support Files/Pods-Movo/Pods-Movo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/cocoapods-artifacts-${CONFIGURATION}.txt
+${BUILT_PRODUCTS_DIR}/ActiveLabel/ActiveLabel.framework
+${BUILT_PRODUCTS_DIR}/AcuantiOSSDKV11/AcuantiOSSDKV11.framework
+${PODS_ROOT}/AcuantiOSSDKV11/EmbeddedFrameworks/TesseractOCR.framework
+${PODS_ROOT}/AcuantiOSSDKV11/EmbeddedFrameworks/AcuantCommon.framework
+${PODS_ROOT}/AcuantiOSSDKV11/EmbeddedFrameworks/AcuantDocumentProcessing.framework
+${PODS_ROOT}/AcuantiOSSDKV11/EmbeddedFrameworks/AcuantEchipReader.framework
+${PODS_ROOT}/AcuantiOSSDKV11/EmbeddedFrameworks/AcuantFaceMatch.framework
+${PODS_ROOT}/AcuantiOSSDKV11/EmbeddedFrameworks/AcuantHGLiveness.framework
+${PODS_ROOT}/AcuantiOSSDKV11/EmbeddedFrameworks/AcuantIPLiveness.framework
+${PODS_ROOT}/AcuantiOSSDKV11/EmbeddedFrameworks/AcuantImagePreparation.framework
+${PODS_ROOT}/AcuantiOSSDKV11/EmbeddedFrameworks/AcuantPassiveLiveness.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework
+${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework
+${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/TOCropViewController/TOCropViewController.framework
+${BUILT_PRODUCTS_DIR}/UITextView+Placeholder/UITextView_Placeholder.framework
